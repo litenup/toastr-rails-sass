@@ -1,5 +1,5 @@
 module Toastr
-  module Rails
+  module Sass
     class Engine < ::Rails::Engine
     end
   end
