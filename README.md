@@ -17,8 +17,8 @@ For other API calls, see the [demo](http://CodeSeven.github.com/toastr).
 
 2. Add toastr to application.css and application.js:
 
-    *= require toastr
-    
+    *= require toastr (if you are using sass, this should be @import 'toastr.min')
+
     //= require toastr
 
 3. use toastr to display a toast for info, success, warning or error
@@ -30,10 +30,10 @@ For other API calls, see the [demo](http://CodeSeven.github.com/toastr).
 
     // Display a warning toast, with no title
     toastr.warning('My name is Inigo Montoya. You Killed my father, prepare to die!')
-    
+
     // Display a success toast, with a title
     toastr.success('Have fun storming the castle!', 'Miracle Max Says')
-    
+
     // Display an error toast, with a title
     toastr.error('I do not think that word means what you tink it means.', 'Inconceivable!')
 
@@ -56,6 +56,6 @@ Inspired by https://github.com/Srirangan/notifer.js/.
 
 Copyright © 2013 [Hans Fjällemark](http://twitter.com/hfjallemark) & [John Papa](http://twitter.com/John_Papa).
 
-## License 
+## License
 
 toastr is under MIT license - http://www.opensource.org/licenses/mit-license.php

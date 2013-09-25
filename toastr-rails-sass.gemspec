@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "2.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Tyler Gannon"]
+  s.authors = ["Tyler Gannon", "Aaron Ciaghi"]
   s.date = "2013-09-25"
   s.description = "Toastr: Simple javascript toast notifications, plugged into the rails asset pipeline."
-  s.email = ["tgannon@gmail.com"]
+  s.email = ["tgannon@gmail.com", "aaron.ciaghi@gmail.com"]
   s.extra_rdoc_files = [
     "README.md"
   ]
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "vendor/assets/stylesheets/toastr.min.css",
     "vendor/assets/stylesheets/toastr.min.css.scss"
   ]
-  s.homepage = "https://github.com/tylergannon/toastr-rails"
+  s.homepage = "https://github.com/ict4g/toastr-rails-sass"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
   s.summary = "Toastr: Simple javascript toast notifications"
@@ -34,6 +34,9 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<toastr-rails-sass>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 1.1.3"])
       s.add_development_dependency(%q<jeweler>, [">= 1.8.3"])
+      s.add_development_dependency(%q<bundler>, [">= 1.1.3"])
+      s.add_development_dependency(%q<jeweler>, [">= 1.8.3"])
+      s.add_development_dependency(%q<version>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 1.1.3"])
       s.add_development_dependency(%q<jeweler>, [">= 1.8.3"])
       s.add_development_dependency(%q<version>, [">= 0"])
@@ -85,6 +88,9 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, [">= 1.1.3"])
       s.add_dependency(%q<jeweler>, [">= 1.8.3"])
       s.add_dependency(%q<version>, [">= 0"])
+      s.add_dependency(%q<bundler>, [">= 1.1.3"])
+      s.add_dependency(%q<jeweler>, [">= 1.8.3"])
+      s.add_dependency(%q<version>, [">= 0"])
       s.add_dependency(%q<railties>, [">= 3.1.0"])
       s.add_dependency(%q<sass-rails>, [">= 3.2"])
       s.add_dependency(%q<bundler>, [">= 1.1.3"])
@@ -95,6 +101,9 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<toastr-rails-sass>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 1.1.3"])
     s.add_dependency(%q<jeweler>, [">= 1.8.3"])
+    s.add_dependency(%q<bundler>, [">= 1.1.3"])
+    s.add_dependency(%q<jeweler>, [">= 1.8.3"])
+    s.add_dependency(%q<version>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 1.1.3"])
     s.add_dependency(%q<jeweler>, [">= 1.8.3"])
     s.add_dependency(%q<version>, [">= 0"])
