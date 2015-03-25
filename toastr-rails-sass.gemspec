@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "toastr-rails-sass"
-  s.version = "2.0.1"
+  s.version = "2.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tyler Gannon", "Aaron Ciaghi"]
-  s.date = "2013-09-25"
+  s.date = "2015-03-25"
   s.description = "Toastr: Simple javascript toast notifications, plugged into the rails asset pipeline."
   s.email = ["tgannon@gmail.com", "aaron.ciaghi@gmail.com"]
   s.extra_rdoc_files = [
