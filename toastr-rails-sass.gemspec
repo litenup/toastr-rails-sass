@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "toastr-rails-sass"
-  s.version = "2.1.1"
+  s.version = "2.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tyler Gannon", "Aaron Ciaghi"]
@@ -18,9 +18,12 @@ Gem::Specification.new do |s|
   s.files = [
     "README.md",
     "lib/toastr-rails-sass.rb",
+    "vendor/assets/javascripts/toastr.js",
     "vendor/assets/javascripts/toastr.min.js",
+    "vendor/assets/javascripts/toastr.js.map",
     "vendor/assets/stylesheets/toastr.min.css",
-    "vendor/assets/stylesheets/toastr.min.css.scss"
+    "vendor/assets/stylesheets/toastr.min.css.scss",
+    "vendor/assets/stylesheets/toastr.scss"
   ]
   s.homepage = "https://github.com/ict4g/toastr-rails-sass"
   s.require_paths = ["lib"]
