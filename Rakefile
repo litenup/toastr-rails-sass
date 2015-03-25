@@ -51,10 +51,12 @@ namespace :toastr do
   desc "Update Toastr"
   task :update => 'submodules:init' do
     files = {
-      File.join('toastr', 'toastr.min.js') => File.join('vendor', 'assets', 'javascripts', 'toastr.min.js'),
-      File.join('toastr', 'toastr.min.js.map') => File.join('vendor', 'assets', 'javascripts', 'toastr.min.js.map'),
-      File.join('toastr', 'toastr.min.css') => File.join('vendor', 'assets', 'stylesheets', 'toastr.min.css'),
-      File.join('toastr', 'toastr.min.css') => File.join('vendor', 'assets', 'stylesheets', 'toastr.min.css.scss')
+      File.join('toastr', 'toastr.js') => File.join('vendor', 'assets', 'javascripts', 'toastr.js'),
+      File.join('toastr', 'toastr.scss') => File.join('vendor', 'assets', 'stylesheets', 'toastr.scss'),
+      File.join('toastr', 'build', 'toastr.min.js') => File.join('vendor', 'assets', 'javascripts', 'toastr.min.js'),
+      File.join('toastr', 'build', 'toastr.js.map') => File.join('vendor', 'assets', 'javascripts', 'toastr.js.map'),
+      File.join('toastr', 'build', 'toastr.min.css') => File.join('vendor', 'assets', 'stylesheets', 'toastr.min.css'),
+      File.join('toastr', 'build', 'toastr.min.css') => File.join('vendor', 'assets', 'stylesheets', 'toastr.min.css.scss')
     }
 
     files.each do |source, destination|
@@ -62,7 +64,7 @@ namespace :toastr do
       system "git add '#{destination}'"
     end
 
-    version = File.open(File.join('toastr', 'nuget', 'content', 'scripts', 'toastr.js')).read.match(/version\s+\=\s+['"]?([\d\.]+)/i)[1]
+    version = File.open(File.join('toastr', 'nuget', 'content', 'scripts', 'toastr.js')).read.match(/version: '([\d]+.[\d]+.[\d]+)'/i)[1]
     if version
       ENV['VERSION'] = version
       Rake::Task["version:create"].invoke
