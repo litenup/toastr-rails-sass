@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.files = [
     "README.md",
     "lib/toastr-rails-sass.rb",
-    "vendor/assets/javascripts/toastr.js",
     "vendor/assets/javascripts/toastr.min.js",
     "vendor/assets/javascripts/toastr.js.map",
     "vendor/assets/stylesheets/toastr.min.css"
