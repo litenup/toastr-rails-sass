@@ -21,16 +21,12 @@ Gem::Specification.new do |s|
     "vendor/assets/javascripts/toastr.js",
     "vendor/assets/javascripts/toastr.min.js",
     "vendor/assets/javascripts/toastr.js.map",
-    "vendor/assets/stylesheets/toastr.min.css",
-    "vendor/assets/stylesheets/toastr.min.css.scss",
-    "vendor/assets/stylesheets/toastr.scss"
+    "vendor/assets/stylesheets/toastr.min.css"
   ]
   s.homepage = "https://github.com/ict4g/toastr-rails-sass"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
   s.summary = "Toastr: Simple javascript toast notifications"
-
-  s.add_dependency(%q<sass-rails>, ["~> 5.0"])
 
 end
 
